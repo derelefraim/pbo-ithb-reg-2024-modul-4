@@ -2,7 +2,7 @@ package model;
 
 import java.util.ArrayList;
 
-public class MatkulMhs {
+public class MatkulAmbil {
     
     private MataKuliah matkul;
     private ArrayList<Presensi> listPresensi = new ArrayList<Presensi>();;
@@ -10,7 +10,7 @@ public class MatkulMhs {
     private int n2;
     private int n3;
     
-    public MatkulMhs(MataKuliah matkul, ArrayList<Presensi> listPresensi, int n1, int n2, int n3) {
+    public MatkulAmbil(MataKuliah matkul, ArrayList<Presensi> listPresensi, int n1, int n2, int n3) {
         this.matkul = matkul;
         this.listPresensi = listPresensi;
         this.n1 = n1;

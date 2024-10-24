@@ -2,19 +2,24 @@ package model;
 import java.util.LinkedList;
 
 public class Magister extends Mahasiswa{
-    public Magister(String nama, String telepon, String alamat, String ttl) {
-        super(nama, telepon, alamat, ttl);
+    
+
+    public Magister(String nama, String telepon, String alamat, String ttl, String nIM, String jurusan,
+            LinkedList<MatkulAmbil> mataKuliah, String judulPenelitianTesis) {
+        super(nama, telepon, alamat, ttl, nIM, jurusan);
+        this.mataKuliah = mataKuliah;
+        this.judulPenelitianTesis = judulPenelitianTesis;
     }
 
-    LinkedList<MataKuliah> mataKuliah = new LinkedList<MataKuliah>();
+    LinkedList<MatkulAmbil> mataKuliah = new LinkedList<MatkulAmbil>();
     String judulPenelitianTesis;
     
 
-    public LinkedList<MataKuliah> getMataKuliah() {
+    public LinkedList<MatkulAmbil> getMataKuliah() {
         return mataKuliah;
     }
 
-    public void setMataKuliah(LinkedList<MataKuliah> mataKuliah) {
+    public void setMataKuliah(LinkedList<MatkulAmbil> mataKuliah) {
         this.mataKuliah = mataKuliah;
     }
 

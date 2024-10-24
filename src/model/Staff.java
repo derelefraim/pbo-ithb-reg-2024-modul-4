@@ -1,12 +1,11 @@
 package model;
 
-public class Staff extends User {
+public abstract class Staff extends User {
+    private String nIK;
+
     public Staff(String nama, String telepon, String alamat, String ttl) {
         super(nama, telepon, alamat, ttl);
     }
-
-    private String nIK;
-
     
     public String getnIK() {
         return nIK;

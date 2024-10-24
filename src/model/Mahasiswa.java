@@ -1,10 +1,11 @@
 package model;
 
-public class Mahasiswa extends User{
+public abstract class Mahasiswa extends User{
     private String nIM, jurusan;
-    
-    public Mahasiswa(String nIM, String telepon, String alamat, String ttl) {
-        super(nIM, telepon, alamat, ttl);
+    public Mahasiswa(String nama, String telepon, String alamat, String ttl, String nIM, String jurusan) {
+        super(nama, telepon, alamat, ttl);
+        this.nIM = nIM;
+        this.jurusan = jurusan;
     }
 
     public String getnIM() {

@@ -1,7 +1,7 @@
 package model;
 import java.util.LinkedList;
 
-public class Dosen extends Staff {
+public abstract class Dosen extends Staff {
     public Dosen(String nama, String telepon, String alamat, String ttl, String departemen,
             LinkedList<MatkulAjar> listMataKuliah) {
         super(nama, telepon, alamat, ttl);

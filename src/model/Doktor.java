@@ -7,9 +7,11 @@ public class Doktor extends Mahasiswa {
     private int nilaiSidang2;
     private int nilaiSidang3;
 
-    public Doktor(String nIM, String telepon, String alamat, String ttl, String judulPenelitianDisertasi,
-            int nilaiSidang1, int nilaiSidang2, int nilaiSidang3) {
-        super(nIM, telepon, alamat, ttl);
+
+
+    public Doktor(String nama, String telepon, String alamat, String ttl, String nIM, String jurusan,
+            String judulPenelitianDisertasi, int nilaiSidang1, int nilaiSidang2, int nilaiSidang3) {
+        super(nama, telepon, alamat, ttl, nIM, jurusan);
         this.judulPenelitianDisertasi = judulPenelitianDisertasi;
         this.nilaiSidang1 = nilaiSidang1;
         this.nilaiSidang2 = nilaiSidang2;
