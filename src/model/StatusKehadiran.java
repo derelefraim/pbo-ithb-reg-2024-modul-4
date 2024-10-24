@@ -1,6 +1,16 @@
 package model;
+
 public enum StatusKehadiran {
+    HADIR(1),    
+    ALPHA(0);    
 
-    HADIR, ALPHA;
+    private final int poin;
+    
+    StatusKehadiran(int poin) {
+        this.poin = poin;
+    }
 
+    public int getPoin() {
+        return poin;
+    }
 }

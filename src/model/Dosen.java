@@ -9,8 +9,8 @@ public abstract class Dosen extends Staff {
         this.listMataKuliah = listMataKuliah;
     }
 
-    String departemen;
-    LinkedList<MatkulAjar> listMataKuliah = new LinkedList<MatkulAjar>();
+    private String departemen;
+    private LinkedList<MatkulAjar> listMataKuliah = new LinkedList<MatkulAjar>();
 
     public String getDepartemen() {
         return departemen;

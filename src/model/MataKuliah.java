@@ -1,8 +1,8 @@
 package model;
 
 public class MataKuliah {
-    String kode, nama;
-    int sks;
+    private String kode, nama;
+    private int sks;
     public MataKuliah(String kode, String nama, int sks) {
         this.kode = kode;
         this.nama = nama;

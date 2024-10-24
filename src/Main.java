@@ -4,9 +4,6 @@ import java.util.LinkedList;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.event.DocumentEvent;
-
-
 public class Main {
     public static void main(String[] args) {
         //Mahasiswa
@@ -18,7 +15,8 @@ public class Main {
         absen.add(presensi);
         
         MatkulAmbil matkulambil = new MatkulAmbil(Stragol, absen, 100, 100, 100);
-        
+        listMatkul.add(matkulambil);
+
         Magister magister = new Magister("Derel", "0822266914776", "Jl Pisces", "Bandung 2022", "1123029", "Infomatics", listMatkul, "Memperkirakan Harga Bitcoin");
         Sarjana sarjana = new Sarjana("Derel", "0822266914776", "Jl Pisces", "Bandung 2022", "1123029", "Infomatics", listMatkul);
         Doktor doktor = new Doktor("Derel", "0822266914776", "Jl Pisces", "Bandung 2022", "1123029", "Infomatics", "Memperkirakan harga BItcoin", 0, 0, 0);
@@ -37,14 +35,14 @@ public class Main {
 
 
         //Print
-        System.out.println(magister.toString() + "\n");
-        System.out.println(sarjana.toString() + "\n");
-        System.out.println(doktor.toString() + "\n");
+        System.out.println("Mahasiswa Magister \n" + magister.toString() + "\n");
+        System.out.println("Mahasiswa Sarjana \n" + sarjana.toString() + "\n");
+        System.out.println("Mahasiswa Doktor \n" + doktor.toString() + "\n");
 
         System.out.println("\n\n");
 
-        System.out.println(dosenHonorer.toString()+ "\n");
-        System.out.println(dosenTetap.toString()+ "\n");
-        System.out.println(karyawan.toString()+ "\n");
+        System.out.println("Dosen Honorer \n" + dosenHonorer.toString()+ "\n");
+        System.out.println("Dosen Tetap \n" +dosenTetap.toString()+ "\n");
+        System.out.println("Karyawan \n" +karyawan.toString()+ "\n");
     }
 }

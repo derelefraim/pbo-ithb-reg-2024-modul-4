@@ -11,8 +11,8 @@ public class Magister extends Mahasiswa{
         this.judulPenelitianTesis = judulPenelitianTesis;
     }
 
-    LinkedList<MatkulAmbil> mataKuliah = new LinkedList<MatkulAmbil>();
-    String judulPenelitianTesis;
+    private LinkedList<MatkulAmbil> mataKuliah = new LinkedList<MatkulAmbil>();
+    private String judulPenelitianTesis;
     
 
     public LinkedList<MatkulAmbil> getMataKuliah() {

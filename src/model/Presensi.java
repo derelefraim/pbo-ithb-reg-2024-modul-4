@@ -29,8 +29,12 @@ public class Presensi {
         return this.status == StatusKehadiran.HADIR;
     }
 
+    public int getPoinKehadiran() {
+        return status.getPoin();
+    }
+
     @Override
     public String toString() {
-        return "Tanggal: " + tanggal + ", Status: " + status;
+        return "Tanggal: " + tanggal + ", Status: " + status + ", Poin Kehadiran: " + getPoinKehadiran();
     }
 }
